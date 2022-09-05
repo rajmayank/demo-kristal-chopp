@@ -125,3 +125,40 @@ $brand-font-headers: 'Barlow Condensed', sans-serif;
         }
     }
 }
+
+.section-question {
+    button:focus {
+        box-shadow: unset;
+    }
+    button.btn.collapsed:before {
+        content:'Learn More' ;
+        display:block;
+        width:80px;
+    }
+    button.btn:before {
+        content:'Close' ;
+        display:block;
+        width:80px;
+    }
+
+    button[aria-expanded="true"] {
+        background-color: $brand-primary-text-highlight;
+        border: $brand-primary-text-highlight;
+    }
+
+    .list-group-item {
+        border-top: 0.5px 0 black solid !important;
+        // border-bottom: 1px black solid !important;
+    }
+
+    .collapse_body {
+        background-color: #e6e7e6;
+        padding: 10px 0 20px 0;
+
+        .card {
+            border: none !important;
+            background-color: unset;
+        }
+
+    }
+}
