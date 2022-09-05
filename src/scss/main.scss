@@ -1,0 +1,127 @@
+//---------------------------------------------
+//
+//  Table of Contents
+//
+//    1. Basics
+//    2. Brand Variables
+//    3. Globals
+//    3. Components
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Basics
+//---------------------------------------------
+
+@import "variables";
+@import "bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&display=swap');
+
+//---------------------------------------------
+// 2. Brand Variables
+//---------------------------------------------
+
+$brand-primary-text: #080808 !important;
+$brand-primary-text-highlight: #143058 !important;
+
+$brand-secondary-text: #ee1c22 !important;
+$brand-secondary-background: #ee1c22 !important;
+
+$brand-font-headers: 'Barlow Condensed', sans-serif;
+
+
+//---------------------------------------------
+// 3. Globals
+//---------------------------------------------
+
+.banner-image {
+    width: 100%;
+}
+
+.bg-brand-pattern {
+    background-image: url("/images/block-bg.jpeg");
+    background-size: cover;
+}
+.bg-brand-solid {
+    background-color: $brand-primary-text-highlight;
+}
+
+.grey-background {
+    background-color: lightgray;
+}
+
+.h-400 {
+    min-height: 400px;
+}
+
+.text-highlight {
+    font-family: $brand-font-headers;
+    color: $brand-primary-text-highlight;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.font-weight-bolder {
+    font-weight: 800 !important;
+}
+
+.fs-xl {
+    font-size: 3.5rem;
+}
+
+.text-spaced-out {
+    letter-spacing: 10px;
+    line-height: 1.4;
+}
+.text-capitalize {
+    text-transform: uppercase !important;
+}
+
+@media (max-width:767px) {
+
+    .border-start,
+    .border-end {
+        border: 0px solid !important
+    }
+}
+
+
+//---------------------------------------------
+// 4. Components
+//---------------------------------------------
+
+.video-cta {
+.icon-play {
+    width: 45px;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: $brand-primary-text-highlight;
+    color: white;
+}
+    
+    span {
+        padding: 3px 15px;
+    }
+}
+
+
+.brand-btn-secondary {
+    @extend .btn-danger;
+    background-color: $brand-secondary-background;
+}
+
+.table-uq {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+
+    tr {
+        margin-bottom: 4px;
+        td:first-child {
+        padding-right: 15px;
+        color: $brand-secondary-text;
+
+        }
+    }
+}
