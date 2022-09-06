@@ -77,6 +77,9 @@ $brand-font-headers: 'Barlow Condensed', sans-serif;
 .text-capitalize {
     text-transform: uppercase !important;
 }
+.text-justify {
+    text-align: justify;
+}
 
 @media (max-width:767px) {
 
@@ -91,18 +94,40 @@ $brand-font-headers: 'Barlow Condensed', sans-serif;
 // 4. Components
 //---------------------------------------------
 
-.video-cta {
-.icon-play {
-    width: 45px;
-    height: auto;
-    display: block;
-    margin: auto;
-    background-color: $brand-primary-text-highlight;
-    color: white;
+section.top-margin{
+    margin-top: 120px;
 }
+
+.video-cta {
+
+    .col-auto {
+        padding: 0;
+    }
+
+    .cell-bg {
+        background-color: $brand-primary-text-highlight;
+    }
+    .icon-play {
+        color: white;
+        line-height: 0;
+
+        img { width: 35px; }
+        @media (min-width: 768px) { img { width: 45px; } }
+    }
     
-    span {
-        padding: 3px 15px;
+    .text-highlight {
+        padding: 5px 15px;
+    }
+    img { width: 35px; }
+        @media (min-width: 768px) { img { width: 45px; } }
+
+
+    .cell-border {
+        border: 1px solid $brand-primary-text-highlight;
+    }
+
+    .cell-hover:hover {
+        cursor: pointer
     }
 }
 
