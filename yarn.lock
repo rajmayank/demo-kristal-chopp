@@ -1626,6 +1626,11 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
+"bootstrap-show-modal@^5.0.2":
+  "integrity" "sha512-KHvwKcIdAd4uW8boQ/qwoikbB+FDOzZUA2wAsTsJbqYMxOHhjNG6R02o9ttBKJxWxV52ycAPMdz18r00Z/+Umg=="
+  "resolved" "https://registry.npmjs.org/bootstrap-show-modal/-/bootstrap-show-modal-5.0.2.tgz"
+  "version" "5.0.2"
+
 "bootstrap@^5.2.0":
   "integrity" "sha512-qlnS9GL6YZE6Wnef46GxGv1UpGGzAwO0aPL1yOjzDIJpeApeMvqV24iL+pjr2kU4dduoBA9fINKWKgMToobx9A=="
   "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.0.tgz"
