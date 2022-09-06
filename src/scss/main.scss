@@ -28,6 +28,9 @@ $brand-primary-text-highlight: #143058 !important;
 $brand-secondary-text: #ee1c22 !important;
 $brand-secondary-background: #ee1c22 !important;
 
+$brand-background : #e4e4de !important;
+
+
 $brand-font-headers: 'Barlow Condensed', sans-serif;
 
 
@@ -192,5 +195,35 @@ section.top-margin{
 #pageModal {
     .modal-header {
         color: white;
+    }
+}
+
+.section-financial-health {
+    .img-block {
+        background-color: $brand-background ;
+    }
+}
+
+.footer {
+    background-color: $brand-primary-text-highlight;
+    padding: 20px 0;
+    color: white;
+
+    .img-container {
+        display: inline-block;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: 7px;
+        height: 30px;
+        width: 30px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
     }
 }
